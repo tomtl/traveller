@@ -12,6 +12,9 @@ gem "jbuilder", "~> 2.0"
 gem "sdoc", "~> 0.4.0", group: :doc
 gem "omniauth-github"
 gem "redis"
+gem "haml-rails"
+gem "bootstrap-sass"
+gem "bootstrap_form"
 
 
 group :development, :test do
@@ -21,5 +24,8 @@ group :development, :test do
   gem "web-console", "~> 2.0"
   gem "spring"
   gem "pry"
+  gem "rspec-rails"
 end
 
+group :test do
+end
