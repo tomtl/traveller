@@ -1,0 +1,9 @@
+.container
+  .center-block
+    %h1 Search for Popular Hotels
+    %p
+      %em Search for the most popular hotels in a city.
+    = form_tag({ controller: "hotels", action: "search" }, method: "post") do
+      = label_tag(:city, "City:")
+      = text_field_tag :city
+      = submit_tag("Search", class:"btn btn-primary")
